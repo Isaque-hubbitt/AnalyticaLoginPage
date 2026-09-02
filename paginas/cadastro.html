@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro - Analytica</title>
+
+    <link rel="stylesheet" href="../css/cadastro.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <div id="logo_icone"><!-- Acrescentar ícone --></div>
+            <span>Analytica</span>
+        </div>
+        
+        <a href="../index.html" id="voltar">
+            Voltar
+        </a>
+    </header>
+
+<main>
+
+    <section id="cadastro">
+
+        <!-- INDICADOR DE ETAPAS -->
+        <div id="etapas">
+            <div class="etapa ativa">
+                <span>1</span>
+                <p>Tipo de conta</p>
+            </div>
+
+            <div class="linha"></div>
+
+            <div class="etapa">
+                <span>2</span>
+                <p>Dados cadastrais</p>
+            </div>
+
+            <div class="linha"></div>
+
+            <div class="etapa">
+                <span>3</span>
+                <p>Confirmação</p>
+            </div>
+        </div>
+
+        <!-- ETAPA 1 -->
+        <div id="etapa1" class="conteudo_etapa">
+
+            <div class="titulo_etapa">
+                <h5>
+                    PASSO 1 DE 3
+                </h5>
+                <h1>
+                    Como você quer se cadastrar?
+                </h1>
+                <p>
+                    Escolha o tipo de conta que deseja criar na plataforma.
+                </p>
+            </div>
+
+            <div id="tipos_conta">
+
+                <button type="button" class="tipo_conta" id="pessoa_juridica">
+                    <div class="linhacheck">
+                        <div class="icone_tipo">
+                            <!-- Acrescentar ícone -->
+                        </div>
+                        <span class="check">
+                            <!-- Acrescentar ícone -->
+                        </span>
+                    </div>
+
+                    <div class="titulo_tipo">
+                        <h3>Pessoa Jurídica</h3>
+                    </div>
+
+                    <p>
+                        Para empresas e recrutadores que desejam publicar
+                        vagas e gerenciar candidatos com IA.
+                    </p>
+
+                    <ul>
+                        <li>Publicar vagas ilimitadas</li>
+                        <li>Triagem automática por IA</li>
+                        <li>Dashboard de recrutamento</li>
+                    </ul>
+                </button>
+
+                <button type="button" class="tipo_conta" id="pessoa_fisica">
+                    <div class="linhacheck">
+                        <div class="icone_tipo">
+                            <!-- Acrescentar ícone -->
+                        </div>
+                        <span class="check">
+                            <!-- Acrescentar ícone -->
+                        </span>
+                    </div>
+
+                    <div class="titulo_tipo">
+                        <h3>Pessoa Física</h3>
+                    </div>
+
+                    <p>
+                        Para candidatos que buscam vagas de emprego
+                        e querem ser encontrados por empresas.
+                    </p>
+
+                    <ul>
+                        <li>Candidatar-se a vagas</li>
+                        <li>Perfil profissional completo</li>
+                        <li>Receber propostas de empresas</li>
+                    </ul>
+                </button>
+
+            </div>
+
+
+            <button type="button" id="continuar_etapa1" class="botao_principal" disabled>
+                Continuar
+            </button>
+
+        </div>
+
+
+        <!-- ETAPA 2 -->
+
+        <div id="etapa2" class="conteudo_etapa escondido">
+
+            <div class="titulo_etapa">
+                
+                <h5 id="tipo_cadastro">
+                    PASSO 2 DE 3
+                </h5>
+                <h1 id="titulo_dados">
+                    Seus dados
+                </h1>
+            
+            </div>
+
+
+            <form id="form_cadastro">
+
+                <div id="campos_cadastro">
+                    <!-- OS CAMPOS SERÃO COLOCADOS PELO JAVASCRIPT -->
+                </div>
+
+                <div class="botoes_etapa">
+                    <button type="button" id="voltar_etapa1" class="botao_secundario">
+                        Voltar
+                    </button>
+
+                    <button type="submit" class="botao_principal">
+                        Continuar
+                    </button>
+                </div>
+
+            </form>
+
+        </div>
+
+        <!-- ETAPA 3 -->
+
+        <div id="etapa3" class="conteudo_etapa escondido">
+            <div id="confirmacao">
+
+                <div id="icone_confirmacao">
+                    <!-- Acrescentar ícone -->
+                </div>
+                
+                <h5>
+                    CADASTRO CONCLUÍDO
+                </h5>
+
+                <h1>
+                    Conta criada com sucesso!
+                </h1>
+
+                <p id="mensagem_confirmacao">
+                    Seu cadastro foi realizado com sucesso.
+                </p>
+
+                <div id="botoes_confirmacao">
+                    <a href="#" id="ir_para_area" class="botao_principal">
+                        Continuar
+                    </a>
+
+                    <a href="index.html" class="botao_secundario">
+                        Voltar ao início
+                    </a>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+
+</main>
+
+    <script src="../js/cadastro.js"></script>
+
+</body>
+</html>

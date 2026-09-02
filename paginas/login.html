@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrar - Analytica</title>
+
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+
+<body>
+
+    <header>
+        <div id="logo">
+            <div id="logo_icone"><!-- Acrescentar ícone --></div>
+            <span>Analytica</span>
+        </div>
+        
+        <a href="../index.html" id="voltar">
+            Voltar
+        </a>
+    </header>
+
+    <main>
+
+        <section id="login">
+
+            <div id="login_titulo">
+                <h1>Bem-vindo de volta!</h1>
+                <p>
+                    Entre na sua conta para continuar na plataforma.
+                </p>
+            </div>
+
+            <form id="form_login">
+
+                <div class="campo">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" placeholder="seuemail@email.com" required>
+                </div>
+
+                <div class="campo">
+
+                    <div class="campo_senha">
+                        <label for="senha">Senha</label>
+
+                        <a href="#" id="esqueci_senha">
+                            Esqueci minha senha
+                        </a>
+                    </div>
+
+                    <input type="password" id="senha" name="senha" placeholder="Digite sua senha" required>
+                </div>
+
+                <button type="submit" id="botao_entrar">
+                    Entrar
+                </button>
+
+            </form>
+
+            <div id="cadastro_link">
+
+                <span>
+                    Ainda não possui uma conta?
+                </span>
+
+                <a href="cadastro.html">
+                    Criar conta
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../js/login.js"></script>
+
+</body>
+</html>
